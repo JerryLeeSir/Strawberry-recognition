@@ -1,0 +1,1 @@
+views.py is a Django view function that describes the process of returning an uploaded image after it is processed by Faster RCNN

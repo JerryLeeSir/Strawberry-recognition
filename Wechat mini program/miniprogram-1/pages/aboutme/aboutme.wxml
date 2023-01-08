@@ -1,0 +1,15 @@
+<!--pages/aboutme/aboutme.wxml-->
+<view class="head-bg">
+    <view>
+    <button style="background-color: #ffffff"></button>
+    </view>
+<view class="btone">
+<button bindtap="objectGO1" style="margin-top: 180rpx; margin-left: 45rpx;height: 50rpx;width: 187rpx; background-image:url(https://aptx4869.ltd/static/images/xiaochengxu/b12.png);background-repeat:no-repeat;background-size: 187rpx 50rpx;border-radius: 20px; overflow: hidden;background-color: #9c78ff;"></button>
+<button bindtap="objectGO2" style="margin-top: 180rpx; margin-left: 0rpx;height: 50rpx;width: 187rpx;background-image:url(https://aptx4869.ltd/static/images/xiaochengxu/b22.png);background-repeat:no-repeat;background-size: 187rpx 50rpx;border-radius: 20px; overflow: hidden;background-color: #9c78ff;"></button>
+<button style="margin-top: 180rpx; margin-left: 0rpx;height: 50rpx;width: 187rpx;background-image:url(https://aptx4869.ltd/static/images/xiaochengxu/b32.png);background-repeat:no-repeat;background-size: 187rpx 50rpx;border-radius: 20px; overflow: hidden;background-color: #7040CF;"></button>
+</view>
+<button bindtap="intro" style="margin-top: 1665rpx; margin-left: 90rpx;height: 110rpx;width: 600rpx;overflow: hidden;background-color:transparent"></button>
+<button bindtap="intro" style="margin-top: 50rpx; margin-left: 90rpx;height: 110rpx;width: 600rpx;overflow: hidden;background-color:transparent"></button>
+<button bindtap="intro" style="margin-top: 50rpx; margin-left: 90rpx;height: 110rpx;width: 600rpx;overflow: hidden;background-color:transparent"></button>
+<button bindtap="intro" style="margin-top: 50rpx; margin-left: 90rpx;height: 110rpx;width: 600rpx;overflow: hidden;background-color:transparent"></button>
+</view>

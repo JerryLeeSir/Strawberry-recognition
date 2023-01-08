@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+{% load staticfiles %}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faster-Rcnn草莓识别系统</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="container right-panel-active">
+        <!-- 首页信息-->
+        <div class="container__form container--signup">
+            <form action="#" class="form" id="form1">
+                <h2 class="form__title">草莓识别与估产系统</h2>
+                <p class="form__objectpeople" >项目开发框架</p>
+                <p class="form__objectpeople_real">Faster-RCNN + Tensorflow + Python3.5</p>
+                <p class="form__objectpleace">使用说明</p>
+                <!--<p class="form__objectpleace_real">请点击作左侧进入识别系统按钮</p>-->
+                <p class="form__objectpleace_real">系统升级维护中，目前暂不可使用！</p>
+                <button class="btn"><a href="{% static 'Strawberry.apk' %}">下载APP</a></button>
+                <button class="btn"><a href="{% static 'wx.png' %}">微信小程序</a></button>
+            </form>
+        </div>
+
+        <!-- 登录 -->
+        <div class="container__form container--signin">
+            <form method="post" enctype="multipart/form-data">
+                <h2 class="form__title" align="center" style="line-height: 150px">图片上传</h2>
+                <h5 style="margin-left: 60px" name = "mypicture">{{uf.as_p}}</h5>
+                <input class="btn" style="margin-left: 100px" onclick="display('lb')" type="submit" value="开始识别"/>
+                <div align="center" id="lb" style="display:none">
+                    识别进度：<progress max="230" value="0" id="pg"></progress>
+                </div>
+                <script>
+                    var pg=document.getElementById('pg'); 
+                    pg.value=0;
+                    setInterval(function(e)
+                    { 
+                        if(pg.value!=230)
+                        { pg.value++;sleep(230)} 
+                        else pg.value=0; 
+                    },230);
+                    </script>
+                <script type="text/javascript">
+                 
+                    function display(id){  
+                        var traget=document.getElementById(id);
+                        var pg=document.getElementById('pg'); 
+                        pg.value=1;
+                        if(traget.style.display=="none"){  
+                            traget.style.display="";  
+                        }else{  
+                            traget.style.display="none";  
+                      }  
+                   }  
+                </script>
+            </form>
+        </div>
+        <!-- 叠加部分 -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <button class="btn" id="signIn">进入识别系统</button>
+                </div>
+                <div class="overlay__panel overlay--right">
+                    <button class="btn" id="signUp">返回首页</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="{% static 'js/script.js' %}"></script>
+<div style="margin-right:1000px;width:300px;padding:20px 0;">
+		 		<a target="_blank" href="https://beian.miit.gov.cn/" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="{% static 'js/123.png' %}" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">鲁ICP备2021008460号-1</p></a>
+		 	</div>
+</html>

@@ -1,0 +1,11 @@
+/* pages/aboutme/aboutme.wxss */
+.head-bg{
+    width: 750rpx;
+    height: 2597rpx;
+    background-image: url('https://aptx4869.ltd/static/images/xiaochengxu/7777.png');
+    background-size: 100% 100%; 
+  }
+  .btone{
+    display: flex;
+    flex-direction: row;
+}

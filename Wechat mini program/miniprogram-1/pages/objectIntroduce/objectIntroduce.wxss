@@ -1,0 +1,11 @@
+/* pages/objectIntroduce/objectIntroduce.wxss */
+.head-bg{
+    width: 750rpx;
+    height: 3727rpx;
+    background-image: url('https://aptx4869.ltd/static/images/xiaochengxu/7313.png');
+    background-size: 100% 100%; 
+  }
+  .btone{
+    display: flex;
+    flex-direction: row;
+}
