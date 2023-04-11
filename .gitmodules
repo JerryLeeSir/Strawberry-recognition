@@ -1,3 +1,0 @@
-[submodule "Faster-RCNN"]
-	path = Faster-RCNN
-	url = https://github.com/dBeker/Faster-RCNN-TensorFlow-Python3.git
