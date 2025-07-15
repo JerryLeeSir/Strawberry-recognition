@@ -14,3 +14,5 @@ Faster-RCNN is the basis of this project. We have improved on the basis of this 
 
 
 The Data set holds the data set of our training model
+
+Due to the lack of funds to cover the costs of the server and domain name, it has been taken down for now
