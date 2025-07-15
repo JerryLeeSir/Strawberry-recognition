@@ -13,6 +13,6 @@ Wetchat mini program is stored strawberry identification wechat small program so
 Faster-RCNN is the basis of this project. We have improved on the basis of this project. You can go to this folder to view the original project
 
 
-The Data set holds the data set of our training model
+The dataset file was originally open for access on github. Due to the large volume of data, it has now been moved to the experience address. Please go there to obtain it
 
 Due to the lack of funds to cover the costs of the server and domain name, it has been taken down for now
